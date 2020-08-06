@@ -28,25 +28,18 @@ type CardProps = {
   paragraph: string,
   link: string,
   img: string
-}
+};
 
 export default function SimpleCard({ title, paragraph, link, img }: CardProps) {
   const classes = useStyles();
   return (
     <Card className={classes.root} >
-      <CardMedia
-        className={classes.media}
-        component="img"
-        image={img}
-        alt={title}
-        title={title} />
+      {img && <CardMedia className={classes.media} component="img" image={img} alt={title} title={title} />}
       <CardContent>
-        <Typography className={classes.title} gutterBottom variant="h5" component="h2" >{title}</Typography>
-        <Typography className={classes.paragraph} >{paragraph}</Typography>
+        {title && <Typography className={classes.title} gutterBottom variant="h5" component="h2" >{title}</Typography>}
+        {paragraph && <Typography className={classes.paragraph} >{paragraph}</Typography>}
       </CardContent>
-      <CardActions >
-        <Button size="small" color="primary" href={link || "#"}>Learn More</Button>
-      </CardActions>
+      {link && <CardActions><Button size="small" color="primary" href={link || "#"}>Learn More</Button></CardActions>}
     </Card>
   )
-}
+};
