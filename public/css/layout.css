@@ -6,29 +6,66 @@
   display: grid;
 }
 
+body {
+  background-image: url("../images/fern.jpg");
+  background-attachment: fixed;
+  background-position: 0% 5%;
+  background-size: cover;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica";
+} */
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 section {
   padding: 0px 40px;
 }
 
-section > h1 {
+/* section>h1 {
   font-size: 2em;
-}
-
+} */
 
 header {
   position: relative;
-  height: 1000px;
+  /* height: 1000px; */
   min-height: 500px;
-  background: #161415 url(../images/woman-moutain.jpg) no-repeat top center;
-  background-size: cover;
-  overflow: hidden;
+}
+
+.site-heading {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: "curvise";
+}
+
+.site-heading .site-heading-upper {
+  font-size: 3rem;
+  color: #494e4e;
+}
+
+.site-heading .site-heading-lower {
+  font-size: 2rem;
+  color: #396c4d;
+}
+ul#nav {
+  width: 100%;
+  background-color: #494e4e;
+  padding: 10px;
+}
+
+ul#nav li {
+  display: inline-block;
 }
 
 ul#nav li a {
-  /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
   padding: 8px 13px;
   line-height: 32px;
   color: #fff;
+  /* background-color: #494e4e; */
   -webkit-transition: color .2s ease-in-out;
   -moz-transition: color .2s ease-in-out;
   -o-transition: color .2s ease-in-out;
@@ -36,11 +73,7 @@ ul#nav li a {
   transition: color .2s ease-in-out;
 }
 
-ul#nav li {
-  display: inline-block;
-}
 
-/* scrolldown link */
 
 header .scrolldown {
   position: absolute;
@@ -60,9 +93,9 @@ header .scrolldown a:hover {
 }
 
 /* about section */
+
 section#about {
   padding: 0px 200px;
-
 }
 
 .social-links>ul {
@@ -105,3 +138,40 @@ div.social-links.container {
 }
 
 /* background-color: aqua; */
+
+/* #resume>section {
+  align-content: center;
+  background-color: #11ABB0;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .education { */
+
+/* display: flex; */
+
+/* flex-direction: row; */
+
+/* flex-flow: row wrap; */
+
+/* } */
+
+.education {
+  /* display: 'inline-block'; */
+  /* align-items: center; */
+  /* text-align: "-webkit-center", */
+}
+
+.education>* {
+  /* display: 'inline-block'; */
+}
+
+section#projects {
+  padding: 50px;
+}
+
+section#projects>* {
+  /* background-color: red; */
+  padding: 15px;
+  margin: 50px 0;
+}

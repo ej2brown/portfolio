@@ -5,10 +5,21 @@ import Paper from '@material-ui/core/Paper';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      minWidth: 275,
-      maxWidth: 345,
+      // display: 'inline-block',
+      // flexWrap: 'wrap',
+      minWidth: 375,
+      maxWidth: 845,
       padding: "10px",
+
     },
+    list: {
+      listStylePosition: "outside",
+      overflow: "auto",
+      '& > *': {
+        // flexFlow: "row wrap"
+      },
+
+    }
   }),
 );
 
@@ -25,7 +36,7 @@ export default function SimplePaper({ company, title, summary }: PaperProps) {
     <Paper elevation={3} className={classes.root}>
       <h3>{company}</h3>
       <div>{title}</div>
-      <ul>{summary.map(point => { return <li>{point}</li> })}</ul>
+      <ul className={classes.list}>{summary.map(point => { return <li>{point}</li> })}</ul>
     </Paper>
   );
 };

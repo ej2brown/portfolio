@@ -1,11 +1,42 @@
-import React, { Component } from 'react';
-export default class About extends Component {
-  render() {
+import React from 'react';
+import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      // display: 'inline-block',
+      // display: "flex",
+      // textAlign: "-webkit-center",
+      // textAlign: "-moz-initial",
+      // textAlign: "justify",
+
+      // textAlign: "center",
+      padding: "20px",
+      backgroundColor: '#396C4D',
+      opacity: "0.5",
+      // alignContent: "center"
+    },
+    content: {
+      opacity: "1",
+    },
+  }),
+);
+type PaperProps = {
+  institute: string,
+  degree: string,
+  alt: string,
+  img: string
+}
+export default function About() {
+  const classes = useStyles();
+
     return (
       <section id="about" >
         <h1>About Me</h1>
-        
+    <Paper elevation={3} className={classes.root}>
         <div className="grid-container">
+          <div className={classes.content}>
           <i className="fa fa-user-circle fa-5x" aria-hidden="true"></i>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -33,9 +64,10 @@ export default class About extends Component {
                 Download Resume</a>
             </div>
           </div>
+          </div>
         </div>
+        </Paper>
 
       </section >
     )
-  }
-}
+};
