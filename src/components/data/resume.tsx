@@ -16,13 +16,13 @@ export const schools: iSchools[] | any = [
   {
     institute: "Lighthouse Labs | Mar - May 2020",
     degree: "Diploma: Full-Stack Web Development",
-    img: "/images/lighthouselabs-logo.png",
+    img: "/images/schools/lighthouselabs-logo.png",
     alt: "lighthouselabs-logo"
   },
   {
     institute: "University of Waterloo | 2015 - 2019",
     degree: "Bachelor of Science: General",
-    img: "/images/uwaterloo-logo.png",
+    img: "/images/schools/uwaterloo-logo.png",
     alt: "uwaterloo-logo"
   }
 ];

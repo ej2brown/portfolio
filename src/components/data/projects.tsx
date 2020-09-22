@@ -26,7 +26,7 @@ export const projects: iProjects[] | any = [
     frontEnd: "Front-end: HTML, CSS",
     backEnd: "Back-end: JavaScript, Microsoft Azure API, Ajax",
     link: "https://github.com/ej2brown/text-analytics-chrome-ext",
-    img: "/images/ext-analytics.png",
+    img: "/images/projects/ext-analytics.png",
     date: "May 2020",
     highlight: "Scraper, Chrome Extension" 
   },
@@ -36,7 +36,7 @@ export const projects: iProjects[] | any = [
     frontEnd: "Front-end: Styled Components, Material UI, React",
     backEnd: "Back-end: TypeScript, Gatsby, Express, JWT ",
     link: "https://github.com/bmark88/lhl-final",
-    img: "/images/devCollabs.png",
+    img: "/images/projects/devCollabs.png",
     date: "May 2020",
     highlight: "" 
   },
@@ -46,7 +46,7 @@ export const projects: iProjects[] | any = [
     frontEnd: "Front-end: HTML, CSS",
     backEnd: "Back-end: Ruby, Ruby on Rails",
     link: "https://github.com/ej2brown/jungle-rails",
-    img: "/images/jungle.png",
+    img: "/images/projects/jungle.png",
     date: "May 2020",
     highlight: "Ruby on Rails" 
   },
@@ -57,7 +57,7 @@ export const projects: iProjects[] | any = [
     backEnd: "Back-end: Node, Express, SQL, API, WebSockets",
     testing: " Testing: Cypress, Jest, Storybook, CircleCi",
     link: "https://github.com/ej2brown/scheduler",
-    img: "/images/scheduler.png",
+    img: "/images/projects/scheduler.png",
     date: "March 2020",
     highlight: "Testing: Cypress, Jest, Storybook, CircleCi"
   },
@@ -67,7 +67,7 @@ export const projects: iProjects[] | any = [
     frontEnd: "Front-end: HTML, CSS/SCSS",
     backEnd: " Node, Express, SQL, API, jQuery",
     link: "https://github.com/ej2brown/resourse_wall",
-    img: "/images/resource-wall.png",
+    img: "/images/projects/resource-wall.png",
     date: "March 2020",
     highlight: "jQuery, SCSS"
   }
