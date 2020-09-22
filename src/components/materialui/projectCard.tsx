@@ -9,11 +9,11 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 375,
-    maxWidth: 445,
+    // minWidth: 375,
+    // maxWidth: 445,
   },
   media: {
-    height: 140,
+    height: 400,
   },
   title: {
     // fontSize: 14,
@@ -44,7 +44,7 @@ type CardProps = {
 export default function SimpleCard({ title, paragraph, link, img, frontEnd, backEnd, date, highlight }: CardProps) {
   const classes = useStyles();
   return (
-    <Card className={classes.root} >
+    <Card className="card" >
       {img && <CardMedia className={classes.media} component="img" image={img} alt={title} title={title}/>}
       <CardContent>
         {title && <Typography className={classes.title} gutterBottom variant="h5" component="h2">{title}</Typography>}
