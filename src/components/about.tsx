@@ -5,20 +5,11 @@ import Paper from '@material-ui/core/Paper';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      // display: 'inline-block',
-      // display: "flex",
-      // textAlign: "-webkit-center",
-      // textAlign: "-moz-initial",
-      // textAlign: "justify",
-
-      // textAlign: "center",
-      padding: "20px",
-      backgroundColor: '#396C4D',
-      opacity: "0.5",
-      // alignContent: "center"
+      backgroundColor: "#ffffffd8",
+      padding: 20,
     },
     content: {
-      opacity: "1",
+      //   opacity: "1",
     },
   }),
 );
@@ -31,28 +22,26 @@ type PaperProps = {
 export default function About() {
   const classes = useStyles();
 
-    return (
-      <section id="about" >
-        <h1>About Me</h1>
-    <Paper elevation={3} className={classes.root}>
+  return (
+    <section id="about">
+      <Paper elevation={3} className={classes.root}>
+      <h3>About Me</h3>
         <div className="grid-container">
-          <div className={classes.content}>
-          <i className="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+          {/* <i className="fa fa-user-circle fa-5x" aria-hidden="true"></i> */}
+          <img src="images/profile.jpg" width="180" height="230" alt="profile-pic"></img>
+          <p> Who am I? A driven problem-solver with a knack to think outside the box.
+          I bring my passion, grit, and working culture experience to the team!
+          I completed the Lighthouse Labs bootcamp,
+          where I excelled and really found my stride.
+          I enjoyed it so much that I currently work there as a mentor.
+          I'm eager to learn and explore new trends in the technology industry
+          and I hope my ever-growing list of side projects reflects that. </p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
-
-          <div className="social-links container">
+          <div className="social-links flex-container">
             <ul className="contact-info" aria-label="Contact Details">
-              <li>Lorem ipsum</li>
-              <li>dolor sit amet</li>
-              <li>consectetur adipiscing</li>
-              <li>sed do eiusmod tempor incididun</li>
+              <li>(416)-859-6185</li>
+              <li>elizabethjbrown78@gmail.com</li>
+              <li>Toronto, Ontario</li>
             </ul>
             <div>
               <ul className="social-icons">
@@ -60,14 +49,13 @@ export default function About() {
                 <li><a href="google.com"><i className="fa fa-google-plus  fa-2x" /></a></li>
                 <li><a href="google.com"><i className="fa fa-github  fa-2x" /></a></li>
               </ul>
-              <a href="https://www.canva.com/design/DAD58RM28DQ/iWKynSknVd5VJoSi8i9Zpw/edit" className="resume-btn">
+              <a href="https://www.canva.com/design/DAEFpUcNSgA/ww2mf8nSywBjQZ6IvMZhMw/view?utm_content=DAEFpUcNSgA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" className="resume-btn">
                 Download Resume</a>
             </div>
           </div>
-          </div>
         </div>
-        </Paper>
+      </Paper>
 
-      </section >
-    )
+    </section >
+  )
 };
