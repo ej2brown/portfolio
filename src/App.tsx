@@ -1,26 +1,40 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 
 import Header from './components/header';
-import Welcome from './components/welcome';
+// import Welcome from './components/welcome';
 import About from './components/about';
 import Projects from './components/projects';
 
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 export default function App() {
+
+  const theme = createMuiTheme({
+    typography: {
+      fontFamily: "Amatic SC, sans-serif",
+      fontSize: 25,
+    },
+  });
+
   return (
-    <Router>
-      <CssBaseline />
-      <div className="App">
+    <div className="App">
+      <ThemeProvider theme={theme}>
+        <Route
+          exact
+          path="/about"
+        >
+          <About />
+        </Route>
+        <CssBaseline />
         <Header />
         <Switch>
           <Route exact path="/">
-            <Welcome />
+            <About />
           </Route>
           <Route exact path="/about">
             <About />
@@ -29,7 +43,7 @@ export default function App() {
             <Projects />
           </Route>
         </Switch>
-      </div>
-    </Router>
+      </ThemeProvider>
+    </div>
   );
 };
