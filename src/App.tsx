@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import Header from './components/header';
-// import Welcome from './components/welcome';
+import Welcome from './components/welcome';
 import About from './components/about';
 import Projects from './components/projects';
 
@@ -34,7 +34,7 @@ export default function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <About />
+            <Welcome />
           </Route>
           <Route exact path="/about">
             <About />
